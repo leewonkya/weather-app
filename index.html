@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Map</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.14.0-web/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPJpjD-qcR_yIxJnS8maR5W9KB0E3EzYI&callback=initMap&libraries=&v=weekly"
+        defer></script>
+    <script type="text/javascript" src="map.js"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="service">
+        <div class="search">
+            <input type="text" placeholder="Enter your City name" id="search-txt">
+            <span id="search-btn"><i class="fas fa-search"></i></span>
+        </div>
+    </div>
+    <div class="weather">
+        <ul>
+            <li><label for="#city">Thành phố: </label>
+                <div id="city"></div>
+            </li>
+            <li><label for="#temperature">Nhiệt độ: </label>
+                <div id="temperature"></div>
+            </li>
+            <li><label for="#humidity">Độ ẩm: </label>
+                <div id="humidity"></div>
+            </li>
+            <li><label for="#wind">Tốc độ gió: </label>
+                <div id="wind"></div>
+            </li>
+            <!-- <li><label for="#cloud">Có mây: </label>
+                <div id="cloud"></div>
+            </li> -->
+        </ul>
+    </div>
+<script type="text/javascript" src="source.js"></script>
+</body>
+
+</html>
